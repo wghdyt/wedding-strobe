@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blue/White Strobe</title>
+  <title>Custom Blue/White Strobe</title>
   <style>
     body {
       margin: 0;
@@ -13,12 +13,12 @@
 </head>
 <body>
 <script>
-  let colors = ["white", "blue"];
+  let colors = ["white", "#82C8E5"];
   let index = 0;
   setInterval(() => {
     document.body.style.backgroundColor = colors[index];
     index = (index + 1) % colors.length;
-  }, 100); // Speed in ms
+  }, 100); // Adjust speed here (ms)
 </script>
 </body>
 </html>
