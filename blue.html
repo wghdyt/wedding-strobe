@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Blue/White Strobe</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+<script>
+  let colors = ["white", "#82C8E5"];
+  let index = 0;
+  setInterval(() => {
+    document.body.style.backgroundColor = colors[index];
+    index = (index + 1) % colors.length;
+  }, 100); // Adjust speed here (ms)
+</script>
+</body>
+</html>
